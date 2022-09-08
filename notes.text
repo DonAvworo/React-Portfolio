@@ -1,0 +1,28 @@
+In this project I will be using React framework to build my Personal Website
+
+____________________________________________________________________________
+
+============ CREATE APP =============
+ * npx create-react-app name-of-app     # creates  
+ * npm start                            # Starts the development server.
+ * npm run build                        # Bundles the app into static files for production.
+ * npm test                             # Starts the test runner.
+ * npm run eject                        # Removes this tool and copies build dependencies, configuration files ...
+                                        # ... and scripts into the app directory. If you do this, you can’t go back!
+
+ Remeber to:
+ *  cd react-portfolio                  # change directory to react-portfolio folder 
+ npm start
+                                      
+
+============ DEPENDECIES ============
+    * npm install --save react-router-dom  # Install react-router-dom dependency 
+    * npm install --save react-icons       # Install react-icons (for icons)
+    * npm install --save react-typist      # Install react-typist (typing effect)
+
+
+
+
+
+
+
