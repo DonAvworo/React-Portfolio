@@ -26,17 +26,33 @@ ____________________________________________________________________________
 ============ FOLDER STRUCTURE ================
 
     * src Folder:
-        * components                   # Contains all the components that will be used in the app 
-            * About                    # About component this will be the about page and will be rendered in the App.js file (this is a child component of the App.js)
-            * Contact                  # Contact component this will be the contact page and will be rendered in the App.js file (this is a child component of the App.js)
-            * Footer                   # Footer component this will be the footer and will be rendered in the App.js file (this is a child component of the App.js)
-            * Header/Hero              # Header component this will be the header and will be rendered in the App.js file (this is a child component of the App.js)
-            * Home                     # Home component this will be the home page and will be rendered in the App.js file (this is a child component of the App.js)
-            * Projects                 # Projects component this will be the projects page and will be rendered in the App.js file (this is a child component of the App.js)
-            * Resume/CV                # Resume component this will be the resume page and will be rendered in the App.js file (this is a child component of the App.js)
-        * App.js                       # This is the main component that will be rendered in the index.js file THIS IS THE PARENT COMPONENT
-        * index.js                     # This is the main file that will be rendered in the index.html file
-        * index.css                    # This is the main css file that will be rendered in the index.html file
+        *Apps.js (main file)        # Parent file for the app (contains all the components)
+        *index.js (main file)       # Main file for the app (contains the ReactDOM.render) Parent file for the App.js (contains all the components)
+        *index.css (main file)      # Main file for the app (contains the css for the app)
+
+
+        * routes                  # Folder for all routes OR pages of the website
+            * About                   # About route 
+            * Contact                 # Contact route
+            * Home                    # Home route
+            * Projects                # Projects route
+
+    * components folder             # Folder for all components
+            * Home.js                # Home component
+             - Home.css               # Home component css stylling
+            * About.js               # About component
+                - About.css              # About component css stylling
+            * Contact.js             # Contact component
+                - Contact.css            # Contact component css stylling
+            * Projects.js            # Projects component
+                - Projects.css           # Projects component css stylling
+            * Navbar.js              # Navbar component
+                - Navbar.css             # Navbar component css stylling
+            * Footer.js              # Footer component
+                - Footer.css             # Footer component css stylling
+            * ScrollToTop.js         # ScrollToTop component
+                - ScrollToTop.css        # ScrollToTop component css stylling
+          
 
     * public Folder:
         * index.html                  # This is the main html file that will be rendered in the browser 

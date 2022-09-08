@@ -12,10 +12,10 @@ function App() {
     // The following code is the HTML that will be rendered to the browser when the App function component is called
     <>                {/* React fragment */}
       <Routes>
-        <Route path="/" element={<Home />} />  {/* renders the Home function component to the browser when the user navigates to the root route */}
-        <Route path="/about" element={<About />} />  {/* renders the About function component to the browser when the user navigates to the /about route */}
-        <Route path="/projects" element={<Projects />} />  {/* renders the Projects function component to the browser when the user navigates to the /projects route */}
-        <Route path="/contact" element={<Contact />} />  {/* renders the Contact function component to the browser when the user navigates to the /contact route */}
+        <Route path="/" element={<Home />} />               {/* renders the Home function component to the browser when the user navigates to the root route */}
+        <Route path="/about" element={<About />} />         {/* renders the About function component to the browser when the user navigates to the /about route */}
+        <Route path="/projects" element={<Projects />} />   {/* renders the Projects function component to the browser when the user navigates to the /projects route */}
+        <Route path="/contact" element={<Contact />} />     {/* renders the Contact function component to the browser when the user navigates to the /contact route */}
       </Routes>
     </>
     
