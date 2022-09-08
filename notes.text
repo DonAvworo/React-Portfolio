@@ -12,15 +12,67 @@ ____________________________________________________________________________
 
  Remeber to:
  *  cd react-portfolio                  # change directory to react-portfolio folder 
- npm start
+    npm start
                                       
 
 ============ DEPENDECIES ============
     * npm install --save react-router-dom  # Install react-router-dom dependency 
     * npm install --save react-icons       # Install react-icons (for icons)
     * npm install --save react-typist      # Install react-typist (typing effect)
+    * npm install   react-router-dom       # Install react-router-dom (for routing)
+    * npm install --save react-scroll      # Install react-scroll (for smooth scrolling)
+    
+
+============ FOLDER STRUCTURE ================
+
+    * src Folder:
+        * components                   # Contains all the components that will be used in the app 
+            * About                    # About component this will be the about page and will be rendered in the App.js file (this is a child component of the App.js)
+            * Contact                  # Contact component this will be the contact page and will be rendered in the App.js file (this is a child component of the App.js)
+            * Footer                   # Footer component this will be the footer and will be rendered in the App.js file (this is a child component of the App.js)
+            * Header/Hero              # Header component this will be the header and will be rendered in the App.js file (this is a child component of the App.js)
+            * Home                     # Home component this will be the home page and will be rendered in the App.js file (this is a child component of the App.js)
+            * Projects                 # Projects component this will be the projects page and will be rendered in the App.js file (this is a child component of the App.js)
+            * Resume/CV                # Resume component this will be the resume page and will be rendered in the App.js file (this is a child component of the App.js)
+        * App.js                       # This is the main component that will be rendered in the index.js file THIS IS THE PARENT COMPONENT
+        * index.js                     # This is the main file that will be rendered in the index.html file
+        * index.css                    # This is the main css file that will be rendered in the index.html file
+
+    * public Folder:
+        * index.html                  # This is the main html file that will be rendered in the browser 
+        * favicon.ico                 # This is the favicon that will be rendered in the browser tab
+        * manifest.json               # manifest.json tells the browser about your web application and how it should behave when 'installed' on the user's mobile device or desktop.
+        * robots.txt                  # The robots.txt file tells search engine crawlers which pages or files the crawler can or can't request from your site.
+    * package.json                    # This is the main file that will be rendered in the index.html file
+    * package-lock.json               # This is the main file that will be rendered in the index.html file
+    * README.md                       # This is the main file that will be rendered in the index.html file
+    * .gitignore                      # This is the main file that will be rendered in the index.html file
+
+    =============TIPS FOR QUICK CREATION OF FUNCTIONAL COMPONENTS AND CLASS COMPONENTS ====================
+    IMPORTANT:
+    (es7 react/redux/react-native/... snippets) extension must be installed in order to use the shortcuts below
+    
+    Inside the components folder create a new file with the name of the component you want to create
+
+    * rcc + tab = class component
+    * rfc + tab = functional component or 
+    * rafce + tab = functional component with export
+    * rce + tab = class component with export default at the end or
+    * rfe + tab = functional component with export default at the end
 
 
+    eg. rcc + tab = class component 
+    import React, { Component } from 'react'
+
+    export default class componentName extends Component {
+        render() {
+            return (
+                <div>
+                    
+                </div>
+            )
+        }
+    }
 
 
 
