@@ -3,7 +3,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
-    /* background-color: #fff; */
     height: 5rem;
     position: fixed;
     top: 0;
@@ -15,8 +14,6 @@
 
 .nav-links {
     display: flex;
-    
-
 }
 
 .nav-links li {
@@ -52,7 +49,7 @@
 }
 
 .name-logo{
-    border: 5px solid #080808;          /*temporary color*/
+    border: 5px solid white;          /*temporary color*/
     background: #dcccc4;
     padding: 0.5rem 1rem;
     border-radius: 50%;}
@@ -62,6 +59,18 @@
     transition: all 0.3s ease-in-out; 
 }
 
+.hambuger-menu {
+    cursor: pointer;
+    transition: 0.4s;
+    display: none; 
+    transition: all 0.3s ease-in-out;  
+}
+
+.hambuger-menu:hover  { 
+    color: #f26a2e;                     /*temporary color*/
+}
+
+
 /*----------------------------------------------------------
 Responsive Design
 -----------------------------------------------------------*/
@@ -70,16 +79,22 @@ Responsive Design
     .nav-links {
         align-items: center;
         flex-direction: column;
-        justify-content: center;
+        justify-content: right;
         position: absolute;
+        z-index: 5;
         top: 5rem;
-        left: 0;
-        right: 0;
+        left: 100%;
         width: 100%;
         height: 100vh;
         text-decoration: none;
-        /* background-color: rgb(236, 121, 121); temporary color */
         background-color: transparent;
+        transition: all 0.9s ease-in-out;   /*SEE NOTE 1 BELOW*/
+    }
+
+    /* refference Navbar.js line 19 */
+    .nav-links.active {             /* note that in Navbar.js line 19 (nav-links.active) is replaced with (nav-links active)  */
+        left: 0;
+        transition: 0.3s;           /* SEE NOTE 1 below */
     }
     
     .name-logo {
@@ -100,7 +115,15 @@ Responsive Design
         top: 0;
         
     }
+
+    .hambuger-menu {
+        transition: 0.4s;
+        display: block; 
+    }
     
+    .hambuger-menu:hover{ 
+        color: #f26a2e;                     /*temporary color*/
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -108,3 +131,14 @@ Responsive Design
         font-size: 0.6rem;
     }
 }
+
+@media screen and (max-width: 320px) {
+    .name-logo {
+        font-size: 0.5rem;
+    }
+}
+
+/* NOTE 1: the transition at line 91 ( transition: all 0.9s ease-in-out;) is set to a be quicker
+while line 97 is set to be slow. the intention is to archieve two different transitional effects
+In general, setting just the transition in line 91 to say  transition: all 0.3s ease-in-out; and
+no transition to the line 97, will produce the same effect */
