@@ -16,7 +16,7 @@ const Navbar = () => {
         <Link to="/">                               {/* the link to the Home.js (Home Page route path is "/")  */}                
             <h1 className="name-logo">Don-Avworo</h1>  {/* the logo of the website  when clicked redirects to Home.js (Home Page)*/}
         </Link>                                     {/* to work, this will be called as a component in te Home.js file */}
-        <ul className={click ? "nav-links active" : "nav-links"}>  
+        <ul className={click ? "nav-links active" : "nav-links"}>  {/* if click is true, then the class name is nav-links active, else it is nav-links */}
             <li>                
                 <Link to="/">Home</Link>             {/* the link to the Home.js (Home Page route path is "/")  */}
             </li>
@@ -34,7 +34,7 @@ const Navbar = () => {
 
          {/*hambuger and close icons  */}
         <div className="hambuger-menu" onClick={handleClick}>
-            {click ? (<FaTimes style={{color: "white"}} size={30}/>) : (<FaBars style={{color: "white"}} size={30}/>)}  
+            {click ? (<FaTimes style={{color: "white"}} size={30}/>) : (<FaBars style={{color: "white"}} size={30}/>)}   
         </div>
       
     </div>

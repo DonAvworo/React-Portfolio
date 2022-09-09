@@ -1,0 +1,125 @@
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+    background: #1b1919;
+    color: #ffffff;
+    width: 100%;
+    padding:  5rem 0;
+    margin-top: 20px;
+    background-color: rgb(20, 19, 19, 0.7);
+
+
+}
+
+.footer-right {
+    float: right;
+    margin-top: 6px;
+    font-size: 80%;
+}
+
+.media-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* margin: 0 auto; */
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 10px;
+  
+}
+
+.media-icons:hover {
+    opacity: 0.6;
+}
+
+.footer-right p {
+    /* margin: 0 auto; */
+    padding: 0;
+    justify-content: space-between;
+    max-width: 100%;
+    font-size: 1.2rem;
+    display: inline-flex;
+    position: relative;
+    bottom: 1.3rem;
+    left: 1.5rem;
+
+}
+
+.footer-left {
+    float: left;
+    margin-top: 6px;
+    font-size: 80%;
+    position: relative;
+}
+
+.footer-left p {
+    /* margin: 0 auto; */
+    /* padding: 0; */
+    justify-content: space-between;
+    max-width: 100%;
+    font-size: 1rem;
+    display: inline-flex;
+    /* position: absolute; */
+    bottom: 1.3rem;
+    left: 1.5rem;
+    line-height: 20px;
+    margin: 1rem;
+
+}
+
+
+/*----------------------------------------------------------
+Responsive Design
+-----------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+
+    .footer-right p {
+        font-size: 1rem;
+
+    }
+      
+}
+
+@media screen and (max-width: 475px) {
+    .footer-wrapper {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        padding: 0;
+        margin-top: 0;
+        background-color: rgb(20, 19, 19, 0.7);
+    }
+
+    .footer-right {
+        float: none;
+        margin-top: 0;
+        font-size: 80%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-left {
+        float: none;
+        margin-top: 0;
+        font-size: 80%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-right p {
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+
+ 
+}
+
+
+
+@media screen and (max-width: 320px) {
+   
+}

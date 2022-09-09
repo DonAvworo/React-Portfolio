@@ -9,7 +9,7 @@
     left: 0;
     right: 0;
     z-index: 100;
-    background-color: #201d1d;
+    background-color: #1b1919;
 }
 
 .nav-links {
@@ -50,13 +50,15 @@
 
 .name-logo{
     border: 5px solid white;          /*temporary color*/
-    background: #dcccc4;
+    background: #ffffff;
     padding: 0.5rem 1rem;
-    border-radius: 50%;}
+    border-radius: 50%;
+}
 
 .name-logo:hover {
-    color: initial;                       /*temporary color*/
+    color: white;                       /*temporary color*/
     transition: all 0.3s ease-in-out; 
+    background: #000000; 
 }
 
 .hambuger-menu {
@@ -67,7 +69,7 @@
 }
 
 .hambuger-menu:hover  { 
-    color: #f26a2e;                     /*temporary color*/
+    opacity: 0.8;
 }
 
 
@@ -106,14 +108,14 @@ Responsive Design
     }
 
     .nav-links li {
-        padding: 5rem 0;
+        padding: 3rem 0;
         text-decoration: none;
     }
 
     .nav-links li a {
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 600;
-        letter-spacing: 0.1rem;
+        letter-spacing: 0.2rem;
         top: 0;
         
     }
