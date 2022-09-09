@@ -1,0 +1,45 @@
+.hero { 
+    height: 100%;
+    width: 100%;
+    display: flex; 
+}
+
+.hero-bgimg {
+    /* background-repeat: no-repeat; */
+    /* height: 100vh; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+
+}
+
+.hero-img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    /* filter: blur(1px);
+    -webkit-filter: blur(1px); */
+}
+
+.hero-text-contents  {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+}
+
+.hero-name {
+    font-size: 2rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+

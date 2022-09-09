@@ -29,12 +29,22 @@ ____________________________________________________________________________
         *Apps.js (main file)        # Parent file for the app (contains all the components)
         *index.js (main file)       # Main file for the app (contains the ReactDOM.render) Parent file for the App.js (contains all the components)
         *index.css (main file)      # Main file for the app (contains the css for the app)
+        *assets Folder:
+            *images Folder:
+                *images files
+            *fonts Folder (optional):
+                *fonts files
 
 
         * routes                  # Folder for all routes OR pages of the website
             * About                   # About route 
             * Contact                 # Contact route
             * Home                    # Home route
+                imports;
+                    React from 'react';
+                    Navbar from '../components/Navbar';
+                    Hero from '../components/Hero';
+
             * Projects                # Projects route
 
     * components folder             # Folder for all components

@@ -87,7 +87,9 @@ Responsive Design
         width: 100%;
         height: 100vh;
         text-decoration: none;
-        background-color: transparent;
+        /* background-color: transparent; */
+        background-color: black;
+        opacity: 0.9;
         transition: all 0.9s ease-in-out;   /*SEE NOTE 1 BELOW*/
     }
 
