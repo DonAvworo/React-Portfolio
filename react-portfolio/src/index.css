@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&family=Montserrat&family=Montserrat+Alternates&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 h2 h3 h4 h5 h6 {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    color: white;
+   
+}
+
+body {
+    background-color: black;
+    text-decoration: none;
+}
+
+.btn-a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-b {
+    text-decoration: none;
+    color: black;
+}
+
+.btn-a:hover
+.btn-b:hover {
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}

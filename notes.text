@@ -1,0 +1,96 @@
+In this project I will be using React framework to build my Personal Website
+
+____________________________________________________________________________
+
+============ CREATE APP =============
+ * npx create-react-app name-of-app     # creates  
+ * npm start                            # Starts the development server.
+ * npm run build                        # Bundles the app into static files for production.
+ * npm test                             # Starts the test runner.
+ * npm run eject                        # Removes this tool and copies build dependencies, configuration files ...
+                                        # ... and scripts into the app directory. If you do this, you can’t go back!
+
+ Remeber to:
+ *  cd react-portfolio                  # change directory to react-portfolio folder 
+    npm start
+                                      
+
+============ DEPENDECIES ============
+    * npm install --save react-router-dom  # Install react-router-dom dependency 
+    * npm install --save react-icons       # Install react-icons (for icons)
+    * npm install --save react-typist      # Install react-typist (typing effect)
+    * npm install   react-router-dom       # Install react-router-dom (for routing)
+    * npm install --save react-scroll      # Install react-scroll (for smooth scrolling)
+    
+
+============ FOLDER STRUCTURE ================
+
+    * src Folder:
+        *Apps.js (main file)        # Parent file for the app (contains all the components)
+        *index.js (main file)       # Main file for the app (contains the ReactDOM.render) Parent file for the App.js (contains all the components)
+        *index.css (main file)      # Main file for the app (contains the css for the app)
+
+
+        * routes                  # Folder for all routes OR pages of the website
+            * About                   # About route 
+            * Contact                 # Contact route
+            * Home                    # Home route
+            * Projects                # Projects route
+
+    * components folder             # Folder for all components
+            * Home.js                # Home component
+             - Home.css               # Home component css stylling
+            * About.js               # About component
+                - About.css              # About component css stylling
+            * Contact.js             # Contact component
+                - Contact.css            # Contact component css stylling
+            * Projects.js            # Projects component
+                - Projects.css           # Projects component css stylling
+            * Navbar.js              # Navbar component
+                - Navbar.css             # Navbar component css stylling
+            * Footer.js              # Footer component
+                - Footer.css             # Footer component css stylling
+            * ScrollToTop.js         # ScrollToTop component
+                - ScrollToTop.css        # ScrollToTop component css stylling
+          
+
+    * public Folder:
+        * index.html                  # This is the main html file that will be rendered in the browser 
+        * favicon.ico                 # This is the favicon that will be rendered in the browser tab
+        * manifest.json               # manifest.json tells the browser about your web application and how it should behave when 'installed' on the user's mobile device or desktop.
+        * robots.txt                  # The robots.txt file tells search engine crawlers which pages or files the crawler can or can't request from your site.
+    * package.json                    # This is the main file that will be rendered in the index.html file
+    * package-lock.json               # This is the main file that will be rendered in the index.html file
+    * README.md                       # This is the main file that will be rendered in the index.html file
+    * .gitignore                      # This is the main file that will be rendered in the index.html file
+
+    =============TIPS FOR QUICK CREATION OF FUNCTIONAL COMPONENTS AND CLASS COMPONENTS ====================
+    IMPORTANT:
+    (es7 react/redux/react-native/... snippets) extension must be installed in order to use the shortcuts below
+    
+    Inside the components folder create a new file with the name of the component you want to create
+
+    * rcc + tab = class component
+    * rfc + tab = functional component or 
+    * rafce + tab = functional component with export
+    * rce + tab = class component with export default at the end or
+    * rfe + tab = functional component with export default at the end
+
+
+    eg. rcc + tab = class component 
+    import React, { Component } from 'react'
+
+    export default class componentName extends Component {
+        render() {
+            return (
+                <div>
+                    
+                </div>
+            )
+        }
+    }
+
+
+
+
+
