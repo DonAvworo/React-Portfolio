@@ -2,17 +2,27 @@
     height: 100%;
     width: 100%;
     display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .hero-bgimg {
-    /* background-repeat: no-repeat; */
-    /* height: 100vh; */
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     object-fit: cover;
+}
 
+.hero-bgimg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .hero-img {
@@ -34,12 +44,109 @@
     -webkit-filter: blur(8px); */
 }
 
+.hero-text-contents h1 {
+    font-size: 3rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
 .hero-name {
     font-size: 2rem;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Montez', cursive;
     font-weight: 100;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
+.hero-text-contents p {
+    font-size: .8rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+.btn {
+    position: relative;
+    display: flex;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    max-width: 100%;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}   
+
+
+.btn-primary {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/*----------------------------------------------------------
+Responsive Design
+-----------------------------------------------------------*/
+
+@media screen and (max-width: 845px) {
+    .hero-name {
+        font-size: 1.6rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .hero-text-contents h1 {
+        font-size: 2.5rem;
+    }
+     
+}
+
+@media screen and (max-width: 375px) {
+    .hero-name {
+        font-size: 1.4rem;
+    }
+
+    .hero-text-contents h1{
+        font-size: 1.8rem;
+    }
+
+
+}
+
+@media screen and (max-width: 320px) {
+ 
+    .hero-name {
+        font-size: 1.2rem;
+    }
+
+    .hero-text-contents h1{
+        font-size: 1.2rem;
+        font-weight: bolder;
+    }
+
+    .hero-text-contents p {
+        font-size: .6rem;
+    }
+}
