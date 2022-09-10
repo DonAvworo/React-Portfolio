@@ -44,22 +44,25 @@
     font-family: 'Montez', cursive;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
-    color: black;                     
+    color: #ffffff;  
+    /*color: #000000;                     /*good with logo design (line 52-65) below*/                  
     text-decoration: none;
 }
-
-.name-logo{
-    border: 5px solid white;          /*temporary color*/
+.name-logo:hover {
+    color: #f26a2e;  
+}
+/* .name-logo{
+    border: 5px solid white;        
     background: #ffffff;
     padding: 0.5rem 1rem;
     border-radius: 50%;
-}
+} */
 
-.name-logo:hover {
-    color: white;                       /*temporary color*/
+/* .name-logo:hover {
+    color: white;                      
     transition: all 0.3s ease-in-out; 
     background: #000000; 
-}
+} */
 
 .hambuger-menu {
     cursor: pointer;
