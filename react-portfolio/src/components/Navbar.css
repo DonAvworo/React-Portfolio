@@ -142,7 +142,7 @@ Responsive Design
     }
 }
 
-/* NOTE 1: the transition at line 91 ( transition: all 0.9s ease-in-out;) is set to a be quicker
-while line 97 is set to be slow. the intention is to archieve two different transitional effects
-In general, setting just the transition in line 91 to say  transition: all 0.3s ease-in-out; and
-no transition to the line 97, will produce the same effect */
+/* NOTE 1: the transition at line 95 ( transition: all 0.9s ease-in-out;) is set to a be quicker
+while line 101 is set to be slow. the intention is to archieve two different transitional effects
+In general, setting just the transition in line 95 to say  transition: all 0.3s ease-in-out; and
+no transition to the line 101, will produce the same effect */
