@@ -100,7 +100,121 @@ ____________________________________________________________________________
         }
     }
 
+==========================================================================================================
+PROPS, STATE, HOOKS AND CONTEXT
+==========================================================================================================
 
+NOTE: props definition and workflow:
+definition of props: props is a special keyword in React, which stands for properties and is being used for passing data from one component to another.
+1. The props are passed from the parent component to the child component like this: <ChildComponent name="John" age="25" />
+2. The child component receives the props as an argument like this: const ChildComponent = (props) => { ... }
+3. The props are used in the child component like this: <h1>My name is {props.name} and I am {props.age} years old</h1>
+4. props are immutable, they cannot be changed in the child component
+5. props are used to pass data from one component to another
+6. props is an object that contains all the properties that are passed to the component
+7. props do not require the arrow function syntax, they can be used like this: const ChildComponent = props => { ... }
+8. to replace the above code with a props example, we can use the following code:
+import React from "react";
+import "./Hero.css";
+ 
+const Hero = props => {
+  return (
+    <div className="hero">
+      <h1>Hi, I'm {props.name}</h1>
+      <p>I'm a {props.profession}</p>
+    </div>
+  )
+} OR
 
+import React from "react";
+import "./Hero.css";
 
+class Hero extends React.Component {
+  render() {
+    return (
+      <div className="hero">
+        <h1>Hi, I'm {this.props.name}</h1>
+        <p>I'm a {this.props.profession}</p>
+      </div>
+    )
+  }
+} OR
 
+import React from "react";
+import "./Hero.css";
+import { Component } from "react";
+
+class Hero extends Component {
+  render() {
+    return (
+      <div className="hero">
+        <h1>Hi, I'm {this.props.name}</h1>
+        <p>I'm a {this.props.profession}</p>
+      </div>
+    )
+  }
+}
+
+export default Hero
+
+NOTE: state definition and workflow:
+definition of state: state is a special keyword in React, which is used to create a component state. The state object is where you store property values that belongs to the component. When the state object changes, the component re-renders.
+1. The state is initialized in the constructor of the component like this: this.state = { name: "John", age: 25 }
+2. The state is accessed in the component like this: <h1>My name is {this.state.name} and I am {this.state.age} years old</h1>
+3. The state is changed in the component like this: this.setState({ name: "John", age: 25 })
+4. state is mutable, it can be changed in the component
+5. state is used to store data that belongs to the component
+6. state is an object that contains all the properties that belongs to the component
+7. state requires the arrow function syntax, it cannot be used like this: const ChildComponent = props => { ... }
+8. to replace the above code with a state example, we can use the following code:
+import React from "react";
+import "./Hero.css";
+
+class Hero extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "John",
+      age: 25
+    };
+  }
+  render() {
+    return (
+      <div className="hero">
+        <h1>Hi, I'm {this.state.name}</h1>
+        <p>I'm a {this.state.age} years old</p>
+      </div>
+    )
+  }
+}
+
+NOTE: React Hooks:
+definition of
+1. The state is initialized in the constructor of the component like this: this.state = { name: "John", age: 25 }
+2. The state is accessed in the component like this: <h1>My name is {this.state.name} and I am {this.state.age} years old</h1>
+3. The state is changed in the component like this: this.setState({ name: "John", age: 25 })
+4. state is mutable, it can be changed in the component
+5. state is used to store data that belongs to the component
+6. state is an object that contains all the properties that belongs to the component
+7. state requires the arrow function syntax, it cannot be used like this: const ChildComponent = props => { ... }
+8. to replace the above code with a state example, we can use the following code:
+import React from "react";
+import "./Hero.css";
+
+class Hero extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "John",
+      age: 25
+    };
+  }
+  render() {
+    return (
+      <div className="hero">
+        <h1>Hi, I'm {this.state.name}</h1>
+        <p>I'm a {this.state.age} years old</p>
+      </div>
+    )
+  }
+}

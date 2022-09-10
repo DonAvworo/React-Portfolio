@@ -19,4 +19,3 @@ const Hero2 = () => {
 
 
 export default Hero2
-

@@ -11,7 +11,7 @@ const Projects = () => {
       <Navbar />           {/* use  Navbar component */}
       <Hero2 />           {/* use  Hero-2 component */}
       <Footer />           {/* use Footer component */}
-    
+      <p>hero</p>
     </div>
   )
 }
