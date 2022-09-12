@@ -1,8 +1,31 @@
 .project-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
   margin: 0 auto;
-  max-width: 1000px;
-  padding: 20px;
+  /* max-width: 1000px; */
+  /* padding: 20px; */
+}
+
+.project {
+  border: 1px solid rgb(255, 250, 250);
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+}
+
+.project img {
+  border-radius: 5px;
+  height: 200px;
+  width: 300px;
+}
+
+.project-card-img {
+  display: flex;
+  justify-content: center;
 }
