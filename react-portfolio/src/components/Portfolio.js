@@ -9,6 +9,7 @@ import Website from '../assets/img/Website.png'
 const Portfolio = () => {
   return (
     <div className="project-wrapper">
+
       <div className="project">
         <h2 className="project-title" >Quiz Web Appliction</h2>
         <p className="project-subtitle">This is a simple quiz app that allows users to answer questions and g
@@ -22,8 +23,9 @@ const Portfolio = () => {
           <NavLink to="https://github.com/DonAvworo/Quiz-WebApp" target="_blank" className="btn ">Source Code</NavLink>
         </div>
       </div>
+
       <div className="project">
-        <h2 className="project-title" >Quiz Web Appliction</h2>
+        <h2 className="project-title" >Password Generator</h2>
         <p className="project-subtitle">This is a simple quiz app that allows users to answer questions and g
           et a score at the end of the quiz. The app is built using HTML and the questions
         </p>
@@ -35,8 +37,9 @@ const Portfolio = () => {
           <NavLink to="https://github.com/DonAvworo/Password-Generator" target="_blank" className="btn ">Source Code</NavLink>
         </div>
       </div>
+
       <div className="project">
-        <h2 className="project-title" >Quiz Web Appliction</h2>
+        <h2 className="project-title" >HTML Personal Website</h2>
         <p className="project-subtitle">This is a simple quiz app that allows users to answer questions and g
           et a score at the end of the quiz. The app is built using HTML and the questions
         </p>
@@ -48,8 +51,6 @@ const Portfolio = () => {
           <NavLink to="https://github.com/DonAvworo/Portfolio-Update" target="_blank" className="btn ">Source Code</NavLink>
         </div>
       </div>
-
-
 
     </div>
     
