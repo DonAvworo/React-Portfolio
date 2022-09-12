@@ -2,7 +2,7 @@ import "./Footer.css";
 import { Link } from 'react-router-dom'; 
 import React from 'react'
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-
+import { NavLink } from "react-router-dom";
 
 const footer = () => {
   return (
@@ -18,22 +18,22 @@ const footer = () => {
             <div className="footer-right">
 
                 <div className="footer-right-icons">
-                    <Link to="https://github.com/DonAvworo" target="_blank" rel="noreferrer">
+                    <NavLink to="https://twitter.com/theprodigaldon" target="_blank">
                         <FaTwitter className="media-icons"/>
-                    </Link>
+                    </NavLink>
                         <p>Twitter</p>
                 </div>
                 <div className="footer-right-icons">
-                <Link to="https://github.com/DonAvworo" target="_blank" rel="noreferrer">
-                    <FaGithub className="media-icons"/>
-                </Link>
-                    <p>Github</p>
+                    <NavLink to="https://github.com/DonAvworo" target="_blank" rel="noreferrer">
+                        <FaGithub className="media-icons"/>
+                    </NavLink>
+                        <p>Github</p>
                 </div>
                 <div className="footer-right-icons">
-                <Link to="https://www.linkedin.com/in/don-avworo-0b0b1b1b9/" target="_blank" rel="noreferrer">
-                    <FaLinkedin className="media-icons"/>
-                </Link>
-                    <p>Linkedin</p>
+                    <Link to="https://www.linkedin.com/in/don-avworo-web-developer/" target="_blank" rel="noreferrer">
+                        <FaLinkedin className="media-icons"/>
+                    </Link>
+                        <p>Linkedin</p>
                 </div>
                 <div className="footer-right-icons">
                     <FaInstagram className="media-icons"/>
